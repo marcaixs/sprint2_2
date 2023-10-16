@@ -2,6 +2,7 @@
 // Exercise 6
 function validate() {
 	var error = 0;
+	let errorMessage = "";
 	// Get the input fields
 	var fName = document.getElementById("fName");
 	var fEmail = document.getElementById("fEmail");
@@ -64,10 +65,10 @@ function validate() {
 	};
 	 
 	if(error>0){
-		alert("Error");
+		alert("Please enter all fields correctly");
 		return false;
 	}else{
-		alert("OK");
+		alert("OSubmitted form.");
 		return true;
 	};
 

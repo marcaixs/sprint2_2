@@ -161,21 +161,20 @@ function printCart() {
 
 // Exercise 7
 function removeFromCart(id) {
-    for(let i; cart.length; i++){
-        if (cart[i].id == id){
-            if (cart[i].quantity == 1){
+    for (i of cart){
+        if (i.id == id){
+            if (i.quantity == 1){
                 cart.splice(i, 1);
                 total -=1;
             }
-            if(cart[i].quantity > 1){
-                cart[i].quantity =- 1;
+            if(i.quantity > 1){
+                i.quantity = i.quantity - 1;
                 total -=1;               
             }
         }
     }
     applyPromotionsCart();    
-    document.getElementById("count_product").innerHTML = total;
-    console.log(cart);
+    document.getElementById("count_product").innerHTML = total;  
 }
 
 
