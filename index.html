@@ -20,8 +20,9 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="50">
 	<!-- Navigation-->
-	<nav class="navbar py-3 py-lg-0 navbar-light bg-light navbar-expand-lg" id="navbar-example2">
+	<nav class="navbar py-3 py-lg-0 navbar-light navbar-expand-lg"  style="background-color: #EAD7BB;" id="navbar-example2">
 		<div class="container d-flex">
+			<img src="./images/logo.png" alt="logo" class="img-fluid m-lg-2" width="30" height="24" >
 			<a class="navbar-brand" href="#!">ShopNow</a>
 			<div class="d-flex flex-row order-lg-last align-items-center">
 
@@ -60,39 +61,40 @@
 	</nav>
 
 	<!-- Header-->
-	<header class="bg-dark py-5">
+	<header class="py-5 " style="background-color: #113946;">
 		<div class="container px-4 px-lg-5 my-5">
 			<div class="text-center text-white">
-				<h1 class="display-4 fw-bolder">IT Academy Shop</h1>
+				<img width="120" height="120" src="./images/logo.png" class="m-2 img-fluid" />
+				<h1 class="display-4" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">IT Academy Shop</h1>
 				<p class="lead fw-normal text-white-50 mb-0">Get up to 50% off Today Only!</p>
 			</div>
 		</div>
 	</header>
 	<!-- Section-->
-	<section class="pt-5" id="grocery">
+	<section class="pt-5" style="background-color: #EAD7BB;" id="grocery">
 		<h2 class="text-center"><i class="fas fa-shopping-basket pe-3"></i>Grocery</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100" style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/oil.png" alt="cooking_oil" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Cooking Oil</h5>
 								$10.5
 							</div>
 						</div>
-						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="card-footer p-4 pt-0 border-top-0">
 							<div class="text-center"><button type="button" onclick="buy(1)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
 							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(1)"
-									class="btn btn-outline-dark">Remove from cart</button></div>
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100"  style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/pasta.jpg" alt="pasta" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Pasta</h5>
@@ -101,13 +103,15 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(2)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(2)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100"  style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/cupcake.jpg" alt="cupcake_mixture" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Instant cupcake mixture</h5>
@@ -116,7 +120,9 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(3)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(3)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
@@ -124,13 +130,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="pt-5" id="beauty">
+	<section class="pt-5" style="background-color: #EAD7BB;" id="beauty">
 		<h2 class="text-center"><i class="fas fa-heart pe-3"></i>Beauty</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100"  style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/all.jpg" alt="all_in_1" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">All-in-1</h5>
@@ -139,13 +145,15 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(4)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(4)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100" style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/zero.jpg" alt="zero_makeup_kit" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Zero makeup kit</h5>
@@ -154,13 +162,15 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(5)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(5)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100" style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/lip.png" alt="lip_tints" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Lip tints</h5>
@@ -169,7 +179,9 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(6)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(6)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
@@ -177,13 +189,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="pt-5" id="clothes">
+	<section class="pt-5" style="background-color: #EAD7BB;" id="clothes">
 		<h2 class="text-center"><i class="fas fa-tshirt pe-3"></i>Clothes</h2>
 		<div class="container px-4 px-lg-5 mt-5">
 			<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100" style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/dress.jpg" alt="lawn_dress" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Lawn dress</h5>
@@ -192,13 +204,15 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(7)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(7)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100" style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/chiffon.jpg" alt="..." />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Lawn-chiffon combo</h5>
@@ -207,13 +221,15 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(8)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(8)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
 				<div class="col mb-5">
-					<div class="card h-100">
-						<img class="card-img-top" src="./images/product.svg" alt="..." />
+					<div class="card h-100" style="background-color: #FFF2D8;">
+						<img class="card-img-top" src="./images/toddler.jpg" alt="toddler_frock" />
 						<div class="card-body p-4">
 							<div class="text-center">
 								<h5 class="fw-bolder">Toddler Frock</h5>
@@ -222,7 +238,9 @@
 						</div>
 						<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 							<div class="text-center"><button type="button" onclick="buy(9)"
-									class="btn btn-outline-dark">Add to cart</button></div>
+									class="btn btn-outline-secondary">Add to cart</button></div>
+							<div class="text-center pt-2"><button type="button" onclick="removeFromCart(9)"
+									class="btn btn-outline-danger">Remove from cart</button></div>
 						</div>
 					</div>
 				</div>
@@ -232,20 +250,20 @@
 	</section>
 
 	<!-- Footer-->
-	<footer class="py-3 bg-dark">
+	<footer class="py-3" style="background-color: #113946;">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p>
 		</div>
 	</footer>
 
-	<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<div class="modal-header">
+				<div class="modal-header" style="background-color: #EAD7BB;">
 					<h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-cart-arrow-down"></i> My Cart</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body" style="background-color: #FFF2D8;">
 					<h3 class="text-center bill px-5">Shopping Cart</h3>
 					<table class="table">
 						<thead>
@@ -281,8 +299,8 @@
 						Total: $<span id="total_price">100</span>
 					</div>
 					<div class="text-center">
-						<a href="checkout.html" class="btn btn-primary m-3">Checkout</a>
-						<a href="javascript:void(0)" onclick="cleanCart()" class="btn btn-primary m-3">Clean Cart</a>
+						<a href="checkout.html" class="btn btn-outline-secondary m-3">Checkout</a>
+						<a href="javascript:void(0)" onclick="cleanCart()" class="btn btn-outline-danger m-3">Clean Cart</a>
 					</div>
 				</div>
 			</div>
